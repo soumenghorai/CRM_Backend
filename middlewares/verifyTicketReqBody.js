@@ -35,4 +35,4 @@ const verifyTicketRequestBody = {
     validateTicketStatus: validateTicketStatus
 }
 
-module.exports = verifyTicketRequestBody;
+module.exports = verifyTicketRequestBody
