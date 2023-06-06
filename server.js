@@ -7,6 +7,7 @@ const dbConfig = require('./configs/db.config')
 const serverConfig = require('./configs/server.config')
 const User = require('./models/user.model')
 const bcrypt = require('bcryptjs')
+require("dotenv").config()
 
 //Express settings
 const bodyParser = require('body-parser')
@@ -35,6 +36,7 @@ async function init(){
         console.log("Admin user already present");
         return;
     }
+
 
     try{
         user = await User.create({
